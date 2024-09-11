@@ -1,0 +1,76 @@
+footer {
+  background: url("../assets/Background_Contacts.png") lightgray 50% / cover no-repeat;
+
+  padding: 8rem 7.5rem 12.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  & span:first-child {
+      color: var(--purple);
+  }
+
+  & p {
+      color: var(--gray-500);
+      font: var(--text-md);
+  }
+
+  & .socials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      & .social {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          width: 25rem;
+          
+
+          padding: 1.25rem;
+          background-color: var(--gray-300);
+          border: 1.5px solid transparent;
+          border-radius: 0.5rem;
+
+          transition: border .2s color .2s;
+
+          cursor: pointer;
+          
+          & .social-info {
+              display: flex;
+              align-items: center;
+              gap: 0.75rem;
+          }
+
+          & .ph-linkedin-logo {
+              font-size: var(--icon-fs);
+              color: var(--icon-color);
+          }
+
+          & .ph-instagram-logo {
+              font-size: var(--icon-fs);
+              color: var(--icon-color);
+          }
+
+          & .ph-github-logo {
+              font-size: var(--icon-fs);
+              color: var(--icon-color);
+          }
+
+          & .ph-envelope-simple {
+              font-size: var(--icon-fs);
+              color: var(--icon-color);
+          }
+
+          &:hover {
+              border: 1.5px solid var(--blue);
+              --icon-color: var(--blue);
+          }
+      }
+  }
+
+}

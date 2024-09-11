@@ -1,0 +1,114 @@
+main {
+  & section.projects {
+      padding: 4.5rem 7.5rem 9rem;
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+
+      & .project-cards {
+          margin-top: 3.5rem;
+
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 1.5rem;
+
+          & .project-card {
+              display: flex;
+              flex-direction: column;
+              
+              background-color: var(--gray-300);
+              max-width: 20.625rem;
+              padding: 0.75rem;
+
+              border-radius: 0.75rem;
+              border: 1.5px solid transparent;
+              
+              overflow: hidden;
+
+              cursor: pointer;
+
+              & img {
+                  width: 100%;
+                  border-radius: 0.75rem;
+                  margin-bottom: 1.25rem;
+              }
+
+              & .project-info {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+
+                  gap: .5rem;
+
+                  padding: 0.25rem;
+
+                  & span {
+                      color: var(--gray-600);
+                      font: var(--title-sm);
+                  }
+  
+                  & p {
+                      color: var(--gray-500);
+                      font: var(--text-sm);
+                  }
+              }
+
+              transition: border 0.2s;
+
+              &:hover {
+                  border: 1.5px solid var(--gray-400);
+              }
+          }
+      }
+  }
+
+  & section.services {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3.5rem;
+
+      background-color: var(--gray-100);
+      padding: 5.5rem 7.5rem 7.5rem;
+
+      & .cards {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+
+          & .card {
+              display: flex;
+              flex-direction: column;
+              gap: 1.25rem;
+
+              padding: 1.25rem;
+
+              border-radius: 0.75rem;
+              border: 2px solid var(--gray-200);
+
+              & > img {
+                  width: 3rem;
+                  height: 3rem;
+              }
+
+              & .card-info {
+                  display: flex;
+                  flex-direction: column;
+                  gap: .5rem;
+
+                  & span {
+                      color: var(--gray-600);
+                      font: var(--title-sm);
+                  }
+
+                  & p {
+                     color: var(--gray-500);
+                     font: var(--text-sm); 
+                  }
+              }
+          }
+      }
+  }
+}
